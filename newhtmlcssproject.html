@@ -1,0 +1,578 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best Online Food Delivery Site</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .btna {
+            padding: 10px 20px;
+            border: 2px solid white;
+            background: linear-gradient(white);
+            /* Fading white background */
+            color: black;
+            margin: 20px auto;
+            /* Center the button */
+            font-size: 1rem;
+            /* Reduced font size for the button */
+            border-radius: 30px;
+            /* Rounded edges */
+            cursor: pointer;
+            display: block;
+            width: 121px;
+        }
+
+        #navbar {
+           
+    display: flex;
+    justify-content: center; /* Space items evenly */
+    position: relative;
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+        #navbar ul {
+           
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+        }
+
+        #navbar li {
+            
+            padding-right: 0 8px;
+        }
+
+        #navbar li a {
+            color: black;
+            text-decoration: none;
+            padding: 3px 22px;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        .icon-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Shift the icon container to the right */
+}
+
+        .icon {
+            font-size: 1.5em;
+            margin-left: 15px;
+            /* Adjust spacing between icons */
+        }
+
+        #navbar::before {
+            align-items: center;
+            content: "";
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            opacity: 0.7;
+            position: absolute;
+            z-index: -1;
+            top: 0px;
+            left: 0px;
+        }
+
+        #home {
+            padding: 3px 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 332px;
+            flex-direction: column;
+        }
+
+        #home::before {
+            content: "";
+            background: url("img1.jpg") no-repeat center center/cover;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 60%;
+            opacity: 0.9;
+            position: absolute;
+            z-index: -1;
+        }
+
+        #home h1 {
+            color: white;
+            text-align: center;
+            font-size: 1.9rem;
+            padding: 8px;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        #home p {
+            color: white;
+            text-align: center;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        .h-primary {
+            font-size: 2.5rem;
+            padding: 25px;
+        }
+
+        .btn {
+            padding: 3px 10px;
+            border: 2px solid white;
+            background-color: rgb(151, 74, 74);
+            color: white;
+            margin: 10px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .box{
+            background-color: white;
+            height: max-content;
+        }
+
+        .h-primary {
+            font-size: 2.8rem;
+            padding: 12px;
+        }
+
+        #apple {
+            color: white;
+        }
+
+        .h-secondary {
+            font-size: 1.8rem;
+            padding: 12px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        #services {
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .service-box {
+            border: solid white;
+            border-radius: 0 35px 0 35px;
+            overflow: hidden;
+            width: 25%;
+            /* Adjusted width for smaller boxes */
+            margin: 10px;
+            /* Added margin for space between boxes */
+        }
+
+        .img-container {
+            text-align: center;
+            padding: 5px;
+            
+            
+            /* Added padding for space around the image */
+        }
+
+        #services .box img {
+            width: 80%;
+            /* Adjusted width for centering */
+            border-radius: 0 35px 0 35px;
+            /* Rounded top corners */
+            height: 270px;
+            /* Adjusted height for smaller image */
+            margin-top: 10px;
+            /* Reduced top margin */
+        }
+
+        .text-container {
+            padding: 10px;
+            
+        }
+
+        #services .box h2,
+        #services .box p {
+            margin: 0;
+        }
+
+        #services .box h2 {
+            font-size: 1.5rem;
+            /* Reduced font size for heading */
+        }
+
+        #services .box p {
+            font-size: 0.9rem;
+            /* Keep font size for paragraph */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .services-container {
+            background: linear-gradient(to right, #EC8FD0, #FBC490, #FFD23F);
+        }
+
+        .text-container {
+            padding: 10px;
+        }
+
+        #services .box h2,
+        #services .box p {
+            margin: 0;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Order Food</a></li>
+            <li><a href="#">Restaurant</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="icon-container">
+            <span class="icon">📞</span>
+            <span class="icon">🛒</span>
+        </div>
+    </nav>
+    <section id="home" style="justify-content: left;">
+        <div style="background-color: #fa8072; padding: 20px; width: 400px;margin-right: 800px;margin-left: 300px;margin-top: 40px; ">
+            <h1 style="color: white;text-align: left;">LOREM IPSUM</h1>
+            <p style="color: white;text-align: left;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+            </p>
+        </div>
+    </section>
+    
+
+    <section class="services-container">
+        <h1 class="h-primary center" id="apple">Order Now</h1>
+        <div id="services">
+            <div class="service-box">
+                <div class="box">
+                    <div class="img-container">
+                        <img src="img4.jpg" alt="">
+                    </div>
+                    <div class="text-container">
+                        <h2 class="h-secondary center">Burger</h2>
+                        <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="box">
+                    <div class="img-container">
+                        <img src="img2.jpg" alt="">
+                    </div>
+                    <div class="text-container">
+                        <h2 class="h-secondary center">Pizza</h2>
+                        <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="box">
+                    <div class="img-container">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="text-container">
+                        <h2 class="h-secondary center">Pasta</h2>
+                        <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btna">Order</button>
+    </section>
+
+
+
+</body>
+
+</html> 
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Best Online Food Delivery Site</title>
+ 
+     <style>
+         * {
+             margin: 0px;
+             padding: 0px;
+         }
+ 
+         body {
+             font-family: 'Baloo Bhai', cursive;
+         }
+ 
+         .btna {
+             padding: 10px 20px;
+             border: 2px solid white;
+             background: linear-gradient(white);
+             color: black;
+             margin: 20px auto;
+             font-size: 1rem;
+             border-radius: 30px;
+             cursor: pointer;
+             display: block;
+             width: 121px;
+         }
+ 
+         #navbar {
+             display: flex;
+             justify-content: space-between;
+             position: relative;
+             background-color: white;
+             color: black;
+             padding: 10px;
+         }
+ 
+         #navbar ul {
+             display: flex;
+             list-style: none;
+             margin: 0;
+             padding: 0;
+             justify-content: center;
+         }
+ 
+         #navbar li {
+             padding-right: 0 8px;
+         }
+ 
+         #navbar li a {
+             color: black;
+             text-decoration: none;
+             padding: 3px 22px;
+             font-family: 'Baloo Bhai', cursive;
+         }
+ 
+         .icon-container {
+             display: flex;
+             align-items: center;
+             margin-left: auto;
+         }
+ 
+         .icon {
+             font-size: 1.5em;
+             margin-left: 15px;
+         }
+ 
+         #navbar::before {
+             align-items: center;
+             content: "";
+             background-color: black;
+             width: 100%;
+             height: 100%;
+             opacity: 0.7;
+             position: absolute;
+             z-index: -1;
+             top: 0px;
+             left: 0px;
+         }
+ 
+         #home {
+             padding: 20px;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+         }
+ 
+         #home::before {
+             content: "";
+             background: url("img1.jpg") no-repeat center center/cover;
+             top: 0px;
+             left: 0px;
+             width: 100%;
+             height: 60vh;
+             opacity: 0.9;
+             position: absolute;
+             z-index: -1;
+         }
+ 
+         #home h1,
+         #home p {
+             color: white;
+             text-align: center;
+             font-size: 1.9rem;
+         }
+ 
+         .services-container {
+             padding: 20px;
+             text-align: center;
+         }
+ 
+         #services {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: space-around;
+         }
+ 
+         .service-box {
+             border: solid white;
+             border-radius: 0 35px 0 35px;
+             overflow: hidden;
+             width: 45%;
+             margin: 10px;
+         }
+ 
+         .img-container {
+             text-align: center;
+             padding: 5px;
+         }
+ 
+         #services .box img {
+             width: 100%;
+             border-radius: 0 35px 0 35px;
+             height: auto;
+             margin-top: 10px;
+         }
+ 
+         .text-container {
+             padding: 10px;
+         }
+ 
+         #services .box h2,
+         #services .box p {
+             margin: 0;
+             text-align: center;
+         }
+ 
+         #services .box h2 {
+             font-size: 1.5rem;
+         }
+ 
+         #services .box p {
+             font-size: 0.9rem;
+             overflow: hidden;
+             text-overflow: ellipsis;
+             white-space: nowrap;
+         }
+ 
+         @media only screen and (max-width: 768px) {
+             /* Tablet styles */
+             #home {
+                 padding: 20px;
+             }
+ 
+             #home h1,
+             #home p {
+                 font-size: 1.5rem;
+             }
+ 
+             .services-container {
+                 padding: 20px;
+             }
+ 
+             .service-box {
+                 width: 100%;
+             }
+         }
+ 
+         @media only screen and (max-width: 480px) {
+             /* Mobile styles */
+             #home {
+                 padding: 10px;
+             }
+ 
+             #home h1,
+             #home p {
+                 font-size: 1.2rem;
+             }
+ 
+             .services-container {
+                 padding: 10px;
+             }
+         }
+     </style>
+ </head>
+ 
+ <body>
+     <nav id="navbar">
+         <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Order Food</a></li>
+             <li><a href="#">Restaurant</a></li>
+             <li><a href="#">Testimonials</a></li>
+             <li><a href="#">Contact Us</a></li>
+         </ul>
+         <div class="icon-container">
+             <span class="icon">📞</span>
+             <span class="icon">🛒</span>
+         </div>
+     </nav>
+     <section id="home">
+         <div>
+             <h1>LOREM IPSUM</h1>
+             <p>
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor
+                 vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+             </p>
+         </div>
+     </section>
+ 
+     <section class="services-container">
+         <h1 class="h-primary" id="apple">Order Now</h1>
+         <div id="services">
+             <div class="service-box">
+                 <div class="box">
+                     <div class="img-container">
+                         <img src="img2.jpg" alt="">
+                     </div>
+                     <div class="text-container">
+                         <h2 class="h-secondary">Food Catering</h2>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,
+                             consectetur adipiscing elit.</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="service-box">
+                 <div class="box">
+                     <div class="img-container">
+                         <img src="img3.jpg" alt="">
+                     </div>
+                     <div class="text-container">
+                         <h2 class="h-secondary">Bulk Ordering</h2>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,
+                             consectetur adipiscing elit.</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="service-box">
+                 <div class="box">
+                     <div class="img-container">
+                         <img src="img4.jpg" alt="">
+                     </div>
+                     <div class="text-container">
+                         <h2 class="h-secondary">Food Delivery</h2>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,
+                             consectetur adipiscing elit.</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <button class="btna">Order</button>
+     </section>
+ </body>
+ 
+ </html>
+ 
